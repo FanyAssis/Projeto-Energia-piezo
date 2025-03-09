@@ -88,38 +88,51 @@ html, body {
 }
 
 /* Estilo página contato */
-
-.conteiner_texto_contato{
-    display:flex;
-    justify-content:center;
-    gap: 2%;
-    padding-top: 10px;
-}
-
-.conteiner_contato_botao{
-    display:flex;
-    justify-content: center;
+.contact_conteiner_botoes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
     flex-direction:column;
-}
-
-button {
-   background-color: rgb(53, 53, 49);
-   border: none;
-   color: var(--cor--conteudo--geral);
-   
-   
-   
-   
-   /* background-color: rgb(126, 124, 122);
-   padding: 20px 25px;
-   text-decoration: none;
-   border-radius: 2%;
-   border: none;
-   margin: 15px;
-   width: 280px;
-   gap: 5px; */
 
 }
+ img{
+    max-width: 60%;
+    max-width: 60%;
+}
+
+ .contact_botoes{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color:rgb(50, 53, 54) ;
+    color: var(--cor--conteudo--texto);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    width: 200px;
+    height: 90px;
+    border: none;
+    padding: 1.87rem 3.75rem;
+    border-radius: 0.62rem;
+    cursor:pointer;
+    box-shadow: 0 4px 6px rgb(223, 201, 132);
+    
+} 
+
+.contact_botoes a:hover{
+    transform:scale(2px);
+    transition: transform 0.5s ease-in-out;
+}
+/* TODO MOVIMENTO DO BOTÃO */
+
+.contact_botoes a{
+    text-decoration: none;
+    pointer-events: none;
+    color: inherit;
+    color: var(--cor--conteudo--texto);
+    transition: transform 0.3s ease-in-out;
+}
+
+
 
 
 

@@ -1,5 +1,5 @@
 const transicaoPagina = document.querySelector('.conteudo_main_transition');
-const pontoDoScroll = 60;
+const pontoDoScroll = 30;
 
 
 
