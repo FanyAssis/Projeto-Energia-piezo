@@ -3,9 +3,11 @@
 
 :root {
     --fonte-principal: var('"Arsenal SC", serif');
-    --cor--conteudo--texto: rgb(224, 224, 180);
-    --cor--fundo: rgb(45, 48, 51);
-    --cor--conteudo--geral:rgb(224, 224, 180) ;
+    --cor--conteudo--texto:rgb(29, 29, 26);
+    --cor--fundo: rgb(0, 0, 0);
+    --cor--fundo--main:rgba(189, 187, 182, 0.473);
+    --cor--conteudo--geral: rgb(29, 29, 26);
+    
 }
 html, body {
     height:100vh;
@@ -13,10 +15,10 @@ html, body {
     margin:0;
     padding: 0;
     color: var(--cor--conteudo--texto);
-    background-image: url('/Img/fundo3.png');
+    /* background-image: url('/Img/fundo3.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     background-color:var(--cor--fundo);
     
 }
@@ -30,6 +32,7 @@ html, body {
     height: 60px;
     width: 100%;
     
+    
 }
 
 .menu a{
@@ -41,11 +44,17 @@ html, body {
     font-size:22px;
     margin-top: 1.5%;
     text-shadow: 2px 2px 3px rgb(236, 236, 228);
+     
+    
+    
+
 }
 
 .menu a:hover{
-    color:rgb(22, 24, 24);
+    color:rgb(85, 92, 92);
 }
+
+
 
 
 /**/
@@ -56,10 +65,16 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
     margin: 0 auto;
     max-width: 790px;
     min-height: 100vh;
+    background-color: var(--cor--fundo--main);
+    border: 2px solid transparent;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(158, 142, 158, 0.8),
+              0 0 30px rgba(231, 229, 100, 0.918),
+              0 0 40px rgb(209, 212, 201); 
+    
    
 }
 .conteudo_main_transition{
@@ -77,6 +92,14 @@ html, body {
     font-size: 20px;
     font-family: var(--fonte-principal);
     gap: 5%;
+   
+}
+  
+
+.img_quartzo{
+    display:flex;
+    justify-content: center;
+    width: 25%;
 
 }
 .container_conteudo_geral{
@@ -84,7 +107,64 @@ html, body {
     font-family: var(--fonte-principal);
     margin-top: 2%;
     color:var(--cor--conteudo--geral);
+    text-indent:16px;
+}
 
+.titulo__centralizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+    
+}
+.botao_saibaMais{
+    width: max-content;
+    border-radius: 2%;
+    background-color: rgb(160, 151, 143);
+    padding: auto;
+    text-decoration: none;
+    color: var(--fonte-principal);
+    
+}
+
+.container_conteudo_estudoDeCaso{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    text-align:left;
+
+}
+
+
+/*PROJETO*/
+.container_projeto{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    margin-top: 36px;
+    gap: 60px;
+}
+
+.estilo__text__projeto{
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+
+}
+
+.prototipo__planta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.captura__prototipo{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    gap: 2%;
 }
 
 /* Estilo página contato */
@@ -92,19 +172,21 @@ html, body {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-direction:column;
+    flex-direction:row;
+    transition: transform 0.3s ease-in-out;
 
 }
+
  img{
     max-width: 60%;
-    max-width: 60%;
+    
 }
 
  .contact_botoes{
     display: flex;
     align-items: center;
     justify-items: center;
-    background-color:rgb(50, 53, 54) ;
+    background-color:rgb(34, 32, 31) ;
     color: var(--cor--conteudo--texto);
     font-family: var(--fonte-principal);
     font-size: 1rem;
@@ -118,20 +200,19 @@ html, body {
     
 } 
 
-.contact_botoes a:hover{
-    transform:scale(2px);
-    transition: transform 0.5s ease-in-out;
-}
+
 /* TODO MOVIMENTO DO BOTÃO */
 
-.contact_botoes a{
+.contact_botoes {
     text-decoration: none;
-    pointer-events: none;
     color: inherit;
     color: var(--cor--conteudo--texto);
+    
+}
+.contact_conteiner_botoes :hover{
+    transform:scale(1.2);
     transition: transform 0.3s ease-in-out;
 }
-
 
 
 
